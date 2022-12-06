@@ -35,7 +35,7 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': 200,
-        'body': json.dumps(response['Items'], default=serialize_non_json)
+        'body': json.dumps(items, default=serialize_non_json)
     }
 
 
